@@ -1,20 +1,23 @@
-package Classes;
+import Classes.MyMath;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyMathTest {
     private MyMath myMath;
 
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
         myMath=new MyMath();
     }
 
-    @org.junit.jupiter.api.AfterEach
+    @AfterEach
     void tearDown() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void isPrimeNumber() {
         assertTrue(myMath.isPrimeNumber(2));
         assertTrue(myMath.isPrimeNumber(3));
@@ -30,11 +33,11 @@ class MyMathTest {
         assertFalse(myMath.isPrimeNumber(9));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void min() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void isExistingTriangle() {
     }
 }

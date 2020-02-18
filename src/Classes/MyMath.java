@@ -2,10 +2,13 @@ package Classes;
 
 public class MyMath {
     public boolean isPrimeNumber(int x) {
-        for (int i=x-1;x==2;i--){
+        for (int i=2;i<x;i++){
             if (x%i==0){
                 return false;
             }
+        }
+        if (x==1||x==0){
+            return false;
         }
         return true;
     }

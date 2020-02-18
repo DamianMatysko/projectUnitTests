@@ -1,4 +1,4 @@
-package Tests;
+package Classes;
 
 public class Information {
     public String convertToBinary(int x) {

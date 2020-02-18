@@ -1,4 +1,4 @@
-package Tests;
+package Classes;
 
 public class MyMath {
     public boolean isPrimeNumber(int x) {
